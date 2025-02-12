@@ -32,11 +32,3 @@ project(":test1-module") {
         testImplementation("core.framework:core-ng-test:9.1.5")
     }
 }
-
-project(":test2-module") {
-    dependencies {
-        implementation("core.framework:core-ng:9.1.5")
-        testImplementation("core.framework:core-ng-test:9.1.5")
-    }
-}
-
