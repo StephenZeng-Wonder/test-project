@@ -14,6 +14,7 @@ class TestUtil {
     @Test
     void test() {
         assert "aaa".equals(StringUtil.toLowerCase("AAA"));
+        assert "test".equals(StringUtil.kotlinTest());
         logger.info("Test passed");
     }
 }

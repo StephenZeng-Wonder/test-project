@@ -2,6 +2,7 @@ apply(plugin = "project")
 
 plugins {
     `java-library`
+    kotlin("jvm") version "1.9.20"
 }
 
 repositories {
@@ -27,6 +28,7 @@ subprojects {
 }
 
 project(":test1-module") {
+    apply(plugin = "kotlin")
     dependencies {
         implementation("core.framework:core-ng:9.1.5")
         testImplementation("core.framework:core-ng-test:9.1.5")
